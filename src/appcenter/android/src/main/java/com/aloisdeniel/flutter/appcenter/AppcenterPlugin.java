@@ -7,6 +7,7 @@ import android.app.Application;
 
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.utils.async.AppCenterConsumer;
+import com.microsoft.appcenter.distribute.Distribute;
 
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -87,6 +88,7 @@ public class AppcenterPlugin implements MethodCallHandler {
           }
         }
 
+        servicesClasses.add(Distribute.class);
         Class[] servicesClassesArray = new Class[servicesClasses.size()];
         servicesClassesArray = servicesClasses.toArray(servicesClassesArray);
         AppCenter.start(app, start_secret, servicesClassesArray);
