@@ -41,7 +41,7 @@ android {
     }
     dependencies {
         def appCenterSdkVersion = '1.10.0'
-        implementation "com.microsoft.appcenter:appcenter:${appCenterSdkVersion}"
-        implementation "com.microsoft.appcenter:appcenter-distribute:${appCenterSdkVersion}"
+        implementation "com.microsoft.appcenter:appcenter:1.10.0"
+        implementation "com.microsoft.appcenter:appcenter-distribute:1.10.0"
     }
 }
