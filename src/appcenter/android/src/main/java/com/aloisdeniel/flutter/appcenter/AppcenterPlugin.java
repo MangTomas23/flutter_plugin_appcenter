@@ -103,7 +103,7 @@ public class AppcenterPlugin implements MethodCallHandler {
       servicesClasses.add(Distribute.class);
       Class[] servicesClassesArray = new Class[servicesClasses.size()];
       servicesClassesArray = servicesClasses.toArray(servicesClassesArray);
-      Distribute.setListener(new MyDistributeListener());
+      // Distribute.setListener(new MyDistributeListener());
       AppCenter.start(app, start_secret, servicesClassesArray);
       Log.d("xtremeload", "APPCENTER STARTED");
 
